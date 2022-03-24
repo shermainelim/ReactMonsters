@@ -8,33 +8,25 @@ class App extends Component {
     this.state = {
       //always a json obj
       //give a key value pair
-
-      name: "Anx",
+      monsters: [
+        {
+          name: "Linda",
+        },
+        {
+          name: "Frank",
+        },
+        {
+          name: "Jacky",
+        },
+      ],
     };
   }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>Hi {this.state.name}</p>
-          <button
-            onClick={() => {
-              this.setState(
-                () => {
-                  return {
-                    name: "Andre",
-                  };
-                },
-                () => {
-                  console.log(this.state);
-                }
-              );
-            }}
-          >
-            change name
-          </button>
-        </header>
+        {this.state.monsters.map((monster) => {
+          return <h1>{monster.name}</h1>;
+        })}
       </div>
     );
   }
