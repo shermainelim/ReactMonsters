@@ -9,6 +9,7 @@ class App extends Component {
       //always a json obj
       //give a key value pair
       monsters: [],
+      searchField: "",
     };
   }
 
@@ -21,25 +22,27 @@ class App extends Component {
         })
       );
   }
+
+  onSearchChange = (event) => {
+    const searchField = event.target.value.toLowerCase();
+    this.setState(() => {
+      return { searchField };
+    });
+  };
+
   render() {
+    const filteredMonsters = this.state.monsters.filter((monster) => {
+      return monster.name.toLowerCase().includes(this.state.searchField);
+    });
     return (
       <div className="App">
         <input
           className="search-box"
           type="search"
           placeholder="search monsters"
-          onChange={(event) => {
-            const filteredMonsters = this.state.monsters.filter((monster) => {
-              return monster.name
-                .toLowerCase()
-                .includes(event.target.value.toLowerCase());
-            });
-            this.setState(() => {
-              return { monsters: filteredMonsters };
-            });
-          }}
+          onChange={this.onSearchChange}
         />
-        {this.state.monsters.map((monster) => {
+        {filteredMonsters.map((monster) => {
           return <h1 key={monster.id}>{monster.name}</h1>;
         })}
       </div>
