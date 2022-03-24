@@ -8,21 +8,18 @@ class App extends Component {
     this.state = {
       //always a json obj
       //give a key value pair
-      monsters: [
-        {
-          id: 1,
-          name: "Linda",
-        },
-        {
-          id: 2,
-          name: "Frank",
-        },
-        {
-          id: 3,
-          name: "Jacky",
-        },
-      ],
+      monsters: [],
     };
+  }
+
+  componentDidMount() {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then((response) => response.json())
+      .then((users) =>
+        this.setState(() => {
+          return { monsters: users };
+        })
+      );
   }
   render() {
     return (
