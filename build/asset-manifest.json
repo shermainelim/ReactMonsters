@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/React-Monsters-Rolodex/static/css/main.535b5e28.css",
-    "main.js": "/React-Monsters-Rolodex/static/js/main.fa689d2b.js",
-    "static/js/787.e4e9b7ff.chunk.js": "/React-Monsters-Rolodex/static/js/787.e4e9b7ff.chunk.js",
-    "static/media/logo.svg": "/React-Monsters-Rolodex/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/React-Monsters-Rolodex/index.html",
-    "main.535b5e28.css.map": "/React-Monsters-Rolodex/static/css/main.535b5e28.css.map",
-    "main.fa689d2b.js.map": "/React-Monsters-Rolodex/static/js/main.fa689d2b.js.map",
-    "787.e4e9b7ff.chunk.js.map": "/React-Monsters-Rolodex/static/js/787.e4e9b7ff.chunk.js.map"
+    "main.css": "/ReactMonsters/static/css/main.535b5e28.css",
+    "main.js": "/ReactMonsters/static/js/main.c61759ae.js",
+    "static/js/787.f2a3dff1.chunk.js": "/ReactMonsters/static/js/787.f2a3dff1.chunk.js",
+    "static/media/logo.svg": "/ReactMonsters/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/ReactMonsters/index.html",
+    "main.535b5e28.css.map": "/ReactMonsters/static/css/main.535b5e28.css.map",
+    "main.c61759ae.js.map": "/ReactMonsters/static/js/main.c61759ae.js.map",
+    "787.f2a3dff1.chunk.js.map": "/ReactMonsters/static/js/787.f2a3dff1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.535b5e28.css",
-    "static/js/main.fa689d2b.js"
+    "static/js/main.c61759ae.js"
   ]
 }
